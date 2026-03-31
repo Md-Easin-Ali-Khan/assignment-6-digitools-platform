@@ -5,7 +5,7 @@ import CercleImage from "../assets/cercle.png"
 const Banner = () => {
     return (
 
-        <div className="py-20 flex justify-between items-center flex-col md:flex-row">
+        <div className="flex justify-between items-center space-y-5 flex-col md:flex-row">
 
             {/* Banner Content */}
             <div>
@@ -13,7 +13,7 @@ const Banner = () => {
                     <div><img src={CercleImage} alt="" /></div>
                     <p className="font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">New: AI-Powered Tools Available</p>
                 </div>
-                <h1 className="font-extrabold mb-4 leading-tight text-gray-900 text-6xl md:text-7xl text-center md:text-left">
+                <h1 className="font-extrabold mb-4 leading-tight text-gray-900 text-5xl md:text-7xl text-center md:text-left">
                     Supercharge Your<p>Digital Workflow</p>
                 </h1>
                 <p className="text-lg text-gray-500 mb-8 text-center md:text-left">
@@ -38,8 +38,8 @@ const Banner = () => {
             </div>
 
             {/* Banner Image */}
-            <div>
-                <img className="w-full max-w-md mx-auto" src={BannerImage} alt="Digital tools illustration" />
+            <div className="w-full max-w-md flex justify-center md:justify-end">
+                <img src={BannerImage} alt="Digital tools illustration" />
             </div>
         </div>
     );
