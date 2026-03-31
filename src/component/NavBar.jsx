@@ -16,25 +16,27 @@ const NavBar = () => {
     ))
 
     return (
-        <div className="navbar h-23 flex justify-between px-6 relative">
+        <div className="h-23 flex justify-between items-center relative">
             <div className="my-6">
                 <div className="flex items-center">
 
-                    <button onClick={() => setOpen(!open)}>
+                    <button
+                        className="md:hidden pr-3"
+                        onClick={() => setOpen(!open)}>
                         {open ?
                             <X className="md:hidden"></X>
                             : <Menu className="md:hidden"></Menu>
                         }
                     </button>
 
-                    <ul className={`md:hidden bg-white shadow-lg p-3 rounded transition-all duration-300 absolute space-y-3 ${open ? 'top-18' : '-top-96'}`}>
+                    <ul className={`md:hidden bg-white shadow-lg p-3 rounded transition-all duration-600 absolute space-y-3 ${open ? 'top-18' : '-top-96'}`}>
                         {links}
                     </ul>
 
-                    <h1 className="text-4xl ml-3 font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</h1>
+                    <h1 className="text-4xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</h1>
                 </div>
             </div>
-            <ul className="hidden md:flex gap-8">
+            <ul className="hidden md:flex gap-8 px-2">
                 {
                     links
                 }
