@@ -1,11 +1,12 @@
 import { Play } from "lucide-react";
 import BannerImage from "../assets/banner.png"
 import CercleImage from "../assets/cercle.png"
+import { gradientBtn } from "./NavBar";
 
 const Banner = () => {
     return (
 
-        <div className="flex justify-between items-center space-y-5 flex-col md:flex-row">
+        <div className="flex justify-between items-center my-20 space-y-5 flex-col md:flex-row">
 
             {/* Banner Content */}
             <div>
@@ -20,7 +21,7 @@ const Banner = () => {
                     Access premium AI tools, design assets, templates, and productivity<br />software—all in one place. Start creating faster today.
                 </p>
                 <div className="flex gap-4 justify-center md:justify-start">
-                    <button className="btn bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white">Explore Products
+                    <button className={gradientBtn}>Explore Products
 
                     </button>
 

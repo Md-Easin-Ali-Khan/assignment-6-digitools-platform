@@ -2,6 +2,7 @@ import { Menu, ShoppingCart, X } from "lucide-react";
 import { useState } from "react";
 import navData from "./navData";
 
+export const gradientBtn = "btn bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white text-sm md:text-base"
 
 const NavBar = () => {
 
@@ -16,8 +17,8 @@ const NavBar = () => {
     ))
 
     return (
-        <div className="md:h-24 flex flex-col justify-center md:flex-row md:justify-between items-center">
-            <div className="my-6">
+        <div className="navbar bg-base-100 shadow-sm flex flex-col justify-center md:flex-row md:justify-between items-center">
+            <div>
                 <div className="flex items-center relative">
 
                     <button
@@ -48,7 +49,7 @@ const NavBar = () => {
                     Login
                 </button>
 
-                <button className="btn bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white text-sm md:text-base">
+                <button className={gradientBtn}>
                     Get Started
                 </button>
             </div>
