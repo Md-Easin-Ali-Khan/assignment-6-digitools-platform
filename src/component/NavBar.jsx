@@ -17,8 +17,8 @@ const NavBar = () => {
     ))
 
     return (
-        <div className="navbar bg-base-100 shadow-sm flex flex-col justify-center md:flex-row md:justify-between items-center">
-            <div>
+        <div className="shadow-lg md:py-6 flex flex-col justify-center md:flex-row md:justify-between items-center">
+            <div className="mb-6 md:mb-0">
                 <div className="flex items-center relative">
 
                     <button
