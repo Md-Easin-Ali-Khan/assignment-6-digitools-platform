@@ -35,7 +35,7 @@ const StartGuideSection = () => {
 
             <div className="flex flex-col md:flex-row gap-7">
                 {cardData.map((card) => (
-                    <div key={card.id} className="pt-5 px-5 hover:shadow-xl transition duration-300 rounded-lg relative">
+                    <div key={card.id} className="pt-5 px-5 bg-[#F2F2F2] hover:shadow-xl transition duration-300 rounded-lg relative">
 
                         <div className="flex justify-center items-center absolute right-5 w-10 h-10 bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white text-sm md:text-base">
                             {card.badge}

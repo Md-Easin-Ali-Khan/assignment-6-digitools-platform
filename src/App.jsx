@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './component/Banner'
+import FooterSection from './component/FooterSection'
 import NavBar from './component/NavBar'
 import PricingSection from './component/PricingSection'
 import StartGuideSection from './component/StartGuideSection'
@@ -16,6 +17,7 @@ function App() {
       <ToolsSection></ToolsSection>
       <StartGuideSection></StartGuideSection>
       <PricingSection></PricingSection>
+      <FooterSection></FooterSection>
     </>
   )
 }
