@@ -1,5 +1,5 @@
-import { headingStyle } from "./ToolsSection";
-import { contentStyle } from "./ToolsSection";
+import { headingStyle } from "./mainSection";
+import { contentStyle } from "./mainSection";
 
 const cardData = [
     {

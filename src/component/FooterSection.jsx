@@ -7,8 +7,8 @@ const FooterSection = () => {
         <div className="bg-[#101727] pt-28">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-20">
 
-                <div className="col-span-1 flex flex-col items-center text-center">
-                    <h1 className="font-extrabold text-4xl text-white mb-4">DigiTools</h1>
+                <div className="col-span-1 flex flex-col items-center text-center md:text-left">
+                    <h1 className="w-full md:text-left font-extrabold text-4xl text-white mb-4">DigiTools</h1>
                     <p className="text-white max-w-sm">Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                 </div>
 

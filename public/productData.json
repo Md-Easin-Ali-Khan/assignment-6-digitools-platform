@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create stunning resumes that get you hired faster with AI-powered suggestions.",
+    "price": "9",
+    "period": "/monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Logo Maker",
+    "description": "Design professional logos in minutes with our drag-and-drop editor.",
+    "price": "19",
+    "period": "/one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "500+ icons",
+      "Custom colors",
+      "SVG & PNG export"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "SEO Analyzer",
+    "description": "Boost your website ranking with real-time SEO insights and recommendations.",
+    "price": "29",
+    "period": "/monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Keyword tracking",
+      "Competitor analysis",
+      "Weekly reports"
+    ],
+    "icon": "📈"
+  },
+  {
+    "id": 4,
+    "name": "Invoice Generator",
+    "description": "Create and send professional invoices to clients in seconds.",
+    "price": "49",
+    "period": "/yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited invoices",
+      "Auto tax calculation",
+      "Multi-currency"
+    ],
+    "icon": "🧾"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Scheduler",
+    "description": "Plan, schedule, and auto-post content across all your social platforms.",
+    "price": "15",
+    "period": "/monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "10 platforms",
+      "Bulk scheduling",
+      "Analytics dashboard"
+    ],
+    "icon": "📅"
+  },
+  {
+    "id": 6,
+    "name": "Password Manager",
+    "description": "Securely store and autofill passwords across all your devices.",
+    "price": "5",
+    "period": "/monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited passwords",
+      "2FA support",
+      "Cross-device sync"
+    ],
+    "icon": "🔐"
+  },
+  {
+    "id": 7,
+    "name": "AI Content Writer",
+    "description": "Generate high-quality blog posts, ads, and copy with AI in seconds.",
+    "price": "39",
+    "period": "/monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "50+ content types",
+      "Plagiarism checker",
+      "SEO optimized"
+    ],
+    "icon": "✍️"
+  },
+  {
+    "id": 8,
+    "name": "Video Compressor",
+    "description": "Compress videos without losing quality, perfect for web and social media.",
+    "price": "12",
+    "period": "/one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Batch compression",
+      "4K support",
+      "No watermark"
+    ],
+    "icon": "🎥"
+  },
+  {
+    "id": 9,
+    "name": "QR Code Generator",
+    "description": "Generate custom QR codes for links, contacts, and businesses in seconds.",
+    "price": "7",
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Custom colors & logo",
+      "High-res download",
+      "Unlimited codes"
+    ],
+    "icon": "🔳"
+  }
+]
