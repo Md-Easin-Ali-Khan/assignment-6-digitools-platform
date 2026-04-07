@@ -7,6 +7,7 @@ import MainSection from './component/MainSection'
 import StartGuideSection from './component/StartGuideSection'
 import PricingSection from './component/PricingSection'
 import FooterSection from './component/FooterSection'
+import { ToastContainer } from 'react-toastify'
 
 const fetchProduct = async () => {
   const res = await fetch("/productData.json");
@@ -26,7 +27,9 @@ function App() {
 
       <StatsSection></StatsSection>
 
-      <Suspense fallback={<span className="loading loading-dots loading-xl text-center"></span>}>
+      <ToastContainer></ToastContainer>
+
+      <Suspense fallback={<div className='flex justify-center'><span className="loading loading-dots loading-xl text-center"></span></div>}>
 
         <MainSection
           productPromise={productPromise}

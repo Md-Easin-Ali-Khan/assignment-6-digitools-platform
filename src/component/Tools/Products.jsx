@@ -1,7 +1,8 @@
 import { Check } from 'lucide-react';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const Products = ({ products, onAddToCart, selectedProduct }) => {
+const Products = ({ products, onAddToCart}) => {
 
   const [isBuy, setisBuy] = useState([]);
 
@@ -9,6 +10,8 @@ const Products = ({ products, onAddToCart, selectedProduct }) => {
     if (!isBuy.includes(product.id)) {
       setisBuy([...isBuy, product.id])
       onAddToCart(product);
+
+      toast.success(`${product.name} added to cart`);
     }
   };
 
@@ -50,8 +53,9 @@ const Products = ({ products, onAddToCart, selectedProduct }) => {
           </ul>
 
           <button
-            type="button"
-            onClick={() => handleBuy(product)}
+            onClick={() => {
+              handleBuy(product);
+            }}
             className="btn bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white text-sm md:text-base" disabled={isBuy.includes(product.id)}>
             {isBuy.includes(product.id) ? "Added to Cart" : "Buy Now"}
           </button>
