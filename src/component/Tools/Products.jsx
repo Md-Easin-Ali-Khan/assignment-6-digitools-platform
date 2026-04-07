@@ -13,25 +13,30 @@ const Products = ({ products, onAddToCart, selectedProduct }) => {
   };
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 pb-28'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 px-5 pb-28'>
       {products.map((product) => (
-        <div key={product.id} className="group bg-[#F2F2F2] card space-y-4 shadow-sm p-6">
+        <div key={product.id} className="group bg-[#F2F2F2] card space-y-4 shadow-sm p-6 relative">
 
-          <div className='flex justify-end'>
-            <div className="badge badge-soft badge-error">{product.tag}</div>
+          <div className='flex justify-between'>
+            <div className='w-12 h-12 flex justify-center items-center text-2xl border border-indigo-200 p-3.5 rounded-full'>
+              {product.icon}
+            </div>
+
+            <div className={`font-semibold absolute top-2.5 right-2.5 badge ${product.tag === "Best Seller"
+              ? "badge-soft badge-secondary"
+              : product.tag === "Popular"
+                ? "badge-soft badge-warning"
+                : "badge-soft badge-accent"
+              }`}>{product.tag}</div>
           </div>
 
-          <div className='w-12 h-12 flex justify-center items-center text-2xl border border-indigo-200 p-3.5 rounded-full'>
-            {product.icon}
-          </div>
+          <h2 className='font-bold text-2xl text-gray-900 text-center md:text-left'>{product.name}</h2>
+          <p className='text-gray-500 text-center md:text-left'>{product.description}</p>
 
-          <h2 className='font-bold text-2xl text-gray-900'>{product.name}</h2>
-          <p className='text-gray-500'>{product.description}</p>
-
-          <h3 className="font-bold text-2xl text-gray-900 ">$
+          <h3 className="font-bold text-2xl text-gray-900 text-center md:text-left">$
             {product.price}
             <span className="text-lg text-gray-500">
-              /{product.period}
+              {product.period}
             </span>
           </h3>
 

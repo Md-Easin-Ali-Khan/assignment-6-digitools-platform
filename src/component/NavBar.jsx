@@ -17,40 +17,38 @@ const NavBar = ({ selectedProduct }) => {
   ))
 
   return (
-    <div className="shadow-lg md:py-6 flex flex-col justify-center md:flex-row md:justify-between items-center">
-      <div className="mb-6 md:mb-0">
+    <div className="shadow-lg py-5 md:py-6 px-10 lg:px-20 flex justify-between md:justify-between items-center">
         <div className="flex items-center relative">
 
           <button
-            className="md:hidden pr-3"
+            className="lg:hidden pr-3"
             onClick={() => setOpen(!open)}>
             {open ?
-              <X className="md:hidden"></X>
-              : <Menu className="md:hidden"></Menu>
+              <X className="w-4 sm:w-5 md:w-6"></X>
+              : <Menu className="w-4 sm:w-5 md:w-6"></Menu>
             }
           </button>
 
-          <ul className={`md:hidden bg-white shadow-lg p-3 rounded transition-all duration-600 absolute space-y-3 ${open ? 'top-12' : '-top-96'}`}>
+          <ul className={`lg:hidden bg-amber-300 shadow-lg p-3 rounded transition-all duration-600 absolute space-y-3 ${open ? 'top-9 sm:top-12' : '-top-96'}`}>
             {links}
           </ul>
 
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</h1>
+          <h1 className="text-2xl md:text-4xl sm:text-3xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</h1>
         </div>
-      </div>
-      <ul className="hidden md:flex space-x-4 px-2">
+      <ul className="hidden lg:flex gap-8">
         {
           links
         }
       </ul>
-      <div className="flex items-center gap-4 md:gap-2 mb-6 md:mb-0">
+      <div className="flex items-center gap-2 sm:gap-3 md:gap-4 ml-7 lg:ml-0">
         <div className="relative">
-          <ShoppingCart className="w-6 text-gray-900" />
-          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+          <ShoppingCart className="w-4 sm:w-5 md:w-6 text-gray-900" />
+          <span className="absolute -top-2 md:-top-3 -right-2 bg-red-500 text-white text-xs w-4 md:w-5 h-5 md:h-6 flex items-center justify-center rounded-full">
             {selectedProduct.length}
           </span>
         </div>
 
-        <button className="btn text-gray-900 font-semibold">
+        <button className="btn text-gray-900 sm:font-semibold rounded-full">
           Login
         </button>
 

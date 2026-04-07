@@ -5,14 +5,14 @@ const listStyle = "space-y-4 text-white"
 const FooterSection = () => {
     return (
         <div className="bg-[#101727] pt-28">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-20 px-10 lg:px-20">
 
-                <div className="col-span-1 flex flex-col items-center text-center md:text-left">
-                    <h1 className="w-full md:text-left font-extrabold text-4xl text-white mb-4">DigiTools</h1>
-                    <p className="text-white max-w-sm">Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
+                <div className="col-span-1 flex flex-col text-center md:text-left">
+                    <h1 className="w-full font-extrabold text-4xl text-white mb-4">DigiTools</h1>
+                    <p className="text-white">Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                 </div>
 
-                <div className="col-span-2 grid justify-items-center gap-7 grid-cols-2 md:justify-between md:grid-cols-4">
+                <div className="col-span-2 grid justify-items-center gap-6 space-y-9 grid-cols-2 md:justify-between md:grid-cols-4">
 
                     <div>
                         <h2 className={headingStyle}>Product</h2>
@@ -56,12 +56,12 @@ const FooterSection = () => {
             </div>
 
             <hr className="h-0.5 w-full bg-gray-500" />
-            <div className="grid grid-cols-2 justify-between py-7 gap-5 md:gap-0">
+            <div className="grid grid-cols-2 justify-between py-7 gap-5 md:gap-0 px-10 lg:px-20">
                 <div className="text-center md:text-left md:col-span-1 col-span-2">
                     <p className="text-gray-500">© 2026 Digitools. All rights reserved.</p>
                 </div>
 
-                <div className="flex md:justify-end justify-center md:col-span-1 col-span-2 text-gray-500">
+                <div className="flex md:justify-end justify-center gap-5 md:col-span-1 col-span-2 text-gray-500">
                     <a href="">Privacy Policy</a>
                     <a href="">Terms of Service</a>
                     <a href="">Cookies</a>

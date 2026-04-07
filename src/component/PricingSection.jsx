@@ -1,6 +1,4 @@
 import { Check } from "lucide-react";
-import { headingStyle } from "./mainSection";
-import { contentStyle } from "./mainSection";
 
 
 const pricingData = [
@@ -57,13 +55,13 @@ const pricingData = [
 
 const PricingSection = () => {
   return (
-    <div className="mb-28">
-      <div className="mb-10 space-y-4">
-        <h1 className={headingStyle}>Simple, Transparent Pricing</h1>
-        <p className={contentStyle}>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+    <div className="mb-28 px-10 lg:px-20">
+      <div className="mb-10 space-y-4 text-center">
+        <h1 className="font-extrabold text-3xl sm:text-4xl md:text-5xl text-gray-900 mb-4">Simple, Transparent Pricing</h1>
+        <p className="text-gray-500 mb-10">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-7 md:justify-between">
+      <div className="shadow-md grid grid-cols-1 md:grid-cols-3 gap-7 md:justify-between">
         {pricingData.map((plan) => (
 
           // cards

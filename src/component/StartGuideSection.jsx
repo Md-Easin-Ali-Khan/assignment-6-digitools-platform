@@ -1,5 +1,3 @@
-import { headingStyle } from "./mainSection";
-import { contentStyle } from "./mainSection";
 
 const cardData = [
     {
@@ -27,15 +25,15 @@ const cardData = [
 
 const StartGuideSection = () => {
     return (
-        <div className="my-28">
-            <div className="mb-5">
-                <h1 className={headingStyle}>Get Started in 3 Steps</h1>
-                <p className={contentStyle}>Start using premium digital tools in minutes, not hours.</p>
+        <div className="my-28 px-10 lg:px-20">
+            <div className="mb-5 text-center">
+                <h1 className="font-extrabold text-3xl sm:text-4xl md:text-5xl text-gray-900 mb-4">Get Started in 3 Steps</h1>
+                <p className="text-gray-500 mb-10">Start using premium digital tools in minutes, not hours.</p>
             </div>
 
             <div className="flex flex-col md:flex-row gap-7">
                 {cardData.map((card) => (
-                    <div key={card.id} className="pt-5 px-5 bg-[#F2F2F2] hover:shadow-xl transition duration-300 rounded-lg relative">
+                    <div key={card.id} className="shadow-md pt-5 px-5 bg-[#F2F2F2] hover:shadow-xl transition duration-300 rounded-lg relative">
 
                         <div className="flex justify-center items-center absolute right-5 w-10 h-10 bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white text-sm md:text-base">
                             {card.badge}

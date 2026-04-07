@@ -1,8 +1,8 @@
 
-const headingStyle = "font-extrabold text-4xl md:text-6xl text-white";
+const headingStyle = "font-extrabold text-4xl md:text-5xl lg:text-6xl text-white";
 const textStyle = "text-xl md:text-2xl text-white"
 const cardStyle = "w-96 text-center py-5 md:py-0"
-const containerStyle = "flex flex-col md:flex-row justify-between mt-20 mb-[120px] py-16 divide-y md:divide-y-0 md:divide-x-2 items-center divide-white/30 bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)]"
+const containerStyle = "px-10 lg:px-20 flex flex-col md:flex-row justify-between mt-20 mb-[120px] py-10 md:py-14 divide-y md:divide-y-0 md:divide-x-2 items-center divide-white/30 bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)]"
 
 const StatsSection = () => {
 
