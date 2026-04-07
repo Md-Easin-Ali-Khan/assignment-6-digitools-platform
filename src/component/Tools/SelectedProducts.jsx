@@ -39,8 +39,12 @@ const SelectedProducts = ({ selectedProduct, setSelectedProduct }) => {
         <p className='font-bold text-2xl'>${total}</p>
       </div>
 
-      <button type="button"
-        className="btn font-bold w-full py-4 bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white">Proceed to Checkout
+      <button
+        type="button"
+        onClick={() => setSelectedProduct([])}
+        className="btn font-bold w-full py-4 bg-[linear-gradient(135deg,#4F39F6_0%,#9514FA_100%)] rounded-full text-white"
+      >
+        Proceed to Checkout
       </button>
     </div>
   )
